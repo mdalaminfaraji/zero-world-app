@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,12 +11,12 @@ export default function Home() {
         <div className="text-2xl font-bold tracking-tight text-gray-900">
           ZerO World
         </div>
-        <a
-          href="#"
+        <Link
+          href="/auth/login"
           className="text-lg font-medium text-gray-900 hover:underline hover:underline-offset-4 transition"
         >
           Sign In
-        </a>
+        </Link>
       </nav>
 
       {/* Main Section */}
@@ -26,7 +27,7 @@ export default function Home() {
             Make sustainability <br /> everyone’s <br /> responsibility
           </h1>
           <button className="px-10 py-4 rounded-md bg-green-700 text-white text-xl font-semibold shadow hover:bg-green-800 transition mb-8">
-            Sign Up
+            <Link href="/auth/signup">Sign Up</Link>
           </button>
         </div>
         {/* Right: Illustration */}
